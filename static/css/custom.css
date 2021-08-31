@@ -1,0 +1,5 @@
+
+div.figure img {
+  max-width: 100%;
+  width: unset;
+}
