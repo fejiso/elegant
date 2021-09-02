@@ -38,9 +38,9 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 </div>
 <div class="row-fluid">
     <div class="span8 offset2">
-        <form class="form-search">
+        <!-- <form class="form-search">
             <input type="text" class="input-medium search-query filterinput" placeholder="Find a tag">
-        </form>
+            </form> -->
         <ul class="list-of-tags">
             {% for tag, articles in tags|sort %}
             <li>
@@ -83,7 +83,7 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
 {% block script %}
 {{ super() }}
 
-<script>
+<!-- <script>
     (function ($) {
         // custom css expression for a case-insensitive contains()
         jQuery.expr[':'].Contains = function(a,i,m){
@@ -118,6 +118,6 @@ All tags used in the {{ SITENAME|striptags|e }} blog.
     }(jQuery));
 
 </script>
-
+-->
 
 {% endblock script %}
